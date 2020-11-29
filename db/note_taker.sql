@@ -7,9 +7,14 @@ CREATE DATABASE note_taker_db;
 USE note_taker_db;
 
 
-CREATE TABLE notes (
-  id INTEGER NOT NULL AUTO_INCREMENT,
-  note VARCHAR(100) NOT NULL,
-  dates VARCHAR (30) NOT NULL,
-  PRIMARY KEY (id)
+CREATE TABLE notes
+(
+  id INTEGER NOT NULL
+  AUTO_INCREMENT,
+  note VARCHAR
+  (100) NOT NULL,
+  dates VARCHAR
+  (30) NOT NULL,
+  PRIMARY KEY
+  (id)
 );
