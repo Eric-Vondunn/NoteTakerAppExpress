@@ -1,18 +1,12 @@
-//dependencies
 const express = require("express");
 const apiRoutes = require("./routes/apiRoutes");
 const htmlRoutes = require("./routes/htmlRoutes");
-const mysql = require("mysql");
-const inquirer = require("inquirer");
-const pug = require("pug");
-const axios = require("axios");
 
-// instance of app
+// Initialize the app and create a port
 const app = express();
-//port
 const PORT = process.env.PORT || 3000;
 
-//routes
+// Set up body parsing, static, and route middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
