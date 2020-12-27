@@ -1,3 +1,5 @@
+// back end routes
+
 const router = require("express").Router();
 const store = require("../db/store");
 
